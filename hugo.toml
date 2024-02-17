@@ -2,3 +2,25 @@ baseURL = 'https://ooransoy.github.io/'
 languageCode = 'en-us'
 title = "ooransoy's blog"
 theme = 'risotto'
+copyright = "© 2024 Olcay Oransoy."
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.about]
+  title = "Hi, I'm /oldʒɑj.oɾɑnsoj/."
+  description = """
+  Or [o̞ɫ'd͡ʒɑj.o̞'ɾɑnso̞j]. IPA transcription courtesy of usuyus.
+
+  CS @ Sabancı '26.
+  """
+  #logo = "⚡️"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
