@@ -2,16 +2,24 @@ baseURL = 'https://ooransoy.github.io/'
 languageCode = 'en-us'
 title = "ooransoy's blog"
 theme = 'risotto'
+paginate = 3
 copyright = "© 2024 Olcay Oransoy."
 sectionPagesMenu = "main"
+
+buildDrafts = true
 
 [params]
 noindex = false
 
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
 [params.about]
-  title = "Hi, I'm /oldʒɑj.oɾɑnsoj/."
+  title = "Hi, I'm [o̞ɫ'd͡ʒɑj.o̞'ɾɑnso̞j]."
   description = """
-  Or [o̞ɫ'd͡ʒɑj.o̞'ɾɑnso̞j]. IPA transcription courtesy of usuyus.
+  IPA transcription courtesy of usuyus.
 
   CS @ Sabancı '26.
   """
