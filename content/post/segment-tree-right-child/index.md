@@ -36,11 +36,11 @@ void update(int i, int x) {
 
 These are two implementations of the point-update function of an iterative segment tree. Despite being practically equivalent, I think the second implementation is far better than the first.
 
-Looking at `i*2+1` makes me think of the linear equation $2i+1$. This implies a ring, so the abstraction `int` mentally resolves to $\mathbb{Z}$. Associating the vertices with $\mathbb{Z}$ implies this labeling for a segment tree:
+Looking at `i*2+1` makes me think of the linear equation $2i+1$. This communicates the presence of a ring structure, so the abstraction `int` mentally resolves to $\mathbb{Z}$. Associating the vertices with $\mathbb{Z}$ implies this labeling for a segment tree:
 
 ![Integer labeling](integer.png)
 
-On the other hand, looking at `i<<1|1` makes me think of appending a `1` to `i`. This implies a sequence, so the abstraction `int` resolves to a sequence of bits, leading to this labeling:
+On the other hand, looking at `i<<1|1` makes me think of appending a `1` to `i`. This communicates the presence of a sequential structure, so the abstraction `int` resolves to a sequence of bits, leading to this labeling:
 
 ![Binary labeling](binary.png)
 
