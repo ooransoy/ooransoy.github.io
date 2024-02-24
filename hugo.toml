@@ -19,8 +19,6 @@ series = "series"
 [params.about]
   title = "Hi, I'm [o̞ɫ'd͡ʒɑj.o̞'ɾɑnso̞j]."
   description = """
-  IPA transcription courtesy of usuyus.
-
   CS @ Sabancı '26.
   """
   #logo = "⚡️"
@@ -32,3 +30,8 @@ series = "series"
     name = "About"
     url = "/about/"
     weight = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

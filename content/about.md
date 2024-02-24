@@ -6,4 +6,6 @@ aliases = ["contact"]
 author = "Olcay Oransoy"
 +++
 
+IPA transcription courtesy of usuyus.
+
 TODO: about page
