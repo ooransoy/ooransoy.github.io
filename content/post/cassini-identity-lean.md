@@ -3,10 +3,6 @@ title = "Proving Cassini's identity in Lean as a beginner's exercise"
 date = 2024-03-16T19:23:31+03:00
 author = "Olcay Oransoy"
 description = ""
-
-draft = true
-[_build]
-  list = 'never'
 +++
 
 {{< math >}}
@@ -222,9 +218,17 @@ theorem cassini_identity (m : ℕ) :
 
 _[appropriate spongebob sound effect]_
 
-<audio controls src="/spongebob_end.wav" />
+<audio controls src="/spongebob_end.wav"/>
+
+Time to scour some more documentation.
 
 ## Reflection
-TODO
+I had seen before while self-studying analysis that we take a lot of the properties of arithmetic for granted, like commutativity, distributivity, associativity, etc. I'm no stranger to this level of detail, however this exercise was interesting because textbooks explicitly tell the reader that they can use these properties without comment after the corresponding section is over. A proof of this identity in a combinatorics book would definitely not warrant mention of the properties of arithmetic, however while formalizing it I really felt the weight of needing _everything_ to work.
+
+Of course, I know that explicitly mentioning the properties of arithmetic in Lean is unnecessary (with `polyrith` in this case). However, it seems that this weight would persist as proofs use better tactics because there would always be equally more complex proofs to formalize.
+
 ## Next steps
-TODO
+
+Catalan's identity (a generalization of this idea) - $F_{n}^{2}-F_{n-m}F_{n+m}=(-1)^{n-m}F_{m}^{2}$ - seems like the obvious next exercise. Along with this, I'm thinking about the Lucas numbers (basically Fibonacci but with $2$ as the first element) as well; I remember that there were quite a few identities between the Lucas numbers and Fibonacci numbers. Furthermore, maybe thinking about formalizing linear recurrences in general might be interesting - the documentation says that there's stuff missing in `Mathlib.Algebra.LinearRecurrence`. I could also have a go at other combinatorial objects (Stirling's numbers are the first to come to my mind).
+
+Aside from exercises, I will also read more about tactics in order to make my proofs more readable and easier to write. I will also read about formatting proofs in order to make them more pleasant.
