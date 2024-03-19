@@ -218,7 +218,7 @@ theorem cassini_identity (m : ℕ) :
 
 _[appropriate spongebob sound effect]_
 
-<audio controls src="/spongebob_end.wav"/>
+<figure><audio controls src="/spongebob_end.wav"/></figure>
 
 Time to scour some more documentation.
 
